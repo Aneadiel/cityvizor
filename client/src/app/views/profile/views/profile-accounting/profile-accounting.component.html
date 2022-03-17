@@ -115,9 +115,11 @@
 						</div>
 					</div>
 				</div>
+				<ng-container *ngIf="isMunicipality">
 				<div class="showMore text-center">
 					<button class="btn btn-primary" (click)="selectEvent(event.id)">Otevřít detail akce</button>
 				</div>
+				</ng-container>
 			</div>
 		</div>
 		<div class="showMore text-center" *ngIf="isMoreEvents()">
